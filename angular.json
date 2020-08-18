@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "buscorepuestos-web": {
+    "template-web": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/buscorepuestos-web",
+            "outputPath": "dist/template-web",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "buscorepuestos-web:build"
+            "browserTarget": "template-web:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "buscorepuestos-web:build:production"
+              "browserTarget": "template-web:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "buscorepuestos-web:build"
+            "browserTarget": "template-web:build"
           }
         },
         "test": {
@@ -114,18 +114,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "buscorepuestos-web:serve"
+            "devServerTarget": "template-web:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "buscorepuestos-web:serve:production"
+              "devServerTarget": "template-web:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "buscorepuestos-web",
+  "defaultProject": "template-web",
   "cli": {
     "analytics": false
   }
